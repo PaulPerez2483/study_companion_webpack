@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- ONLY FOR STYLING --- */
+body {
+  display: flex;
+  font-family: 'Open Sans', FontAwesome, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+p{
+  margin-bottom: 5px;
+}
+
+.center{
+  text-align: center;
+}
+.left-nav {
+  width: 220px;
+  height: 100vh;
+  border: 1px dotted gray;
+  /* align-self: center; */
+  text-align: center;
+  font-size: 160px;
+  color: lightgray;
+}
+
+/* ----- nav ---- */
+nav > button {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #003082;
+  border: none;
+  cursor: pointer;
+  width: 66px;
+  font-size: 19px;
+}
+
+/* --- styles for main and nav info ----  */
+section.main-container {
+  padding: 25px;
+  /* width: 45vw; */
+}
+
+section.main-container > section.nav-info {
+  display: flex;
+}
+section.nav-info {
+  background-color: #e8e8e8;
+  padding: 15px 10px;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 10px solid white;
+}
+
+.question-num {
+  flex: 2;
+  align-self: center;
+}
+.question-num > h2 {
+  margin: 0;
+  /* color: #303030; */
+}
+
+div.test-question > p {
+  margin-top: 10px;
+}
+
+/* --- heading --- */
+section.main-container > h1 {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin: 15px 0;
+}
+.h2Color {
+  color: #003082;
+}
+/* ---  answers --- */
+section.root {
+  padding-left: 10px;
+  margin-top: 6px;
+}
+
+ol.answers {
+  list-style-type: none;
+  margin: 25px 0 25px 32px;
+  counter-reset: countLetters;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+ol.answers > li {
+  margin: 10px;
+  counter-increment: countLetters 1;
+}
+
+.correct {
+  background-color: #31a34e3b;
+  border-color: #000;
+  border-radius: 5px;
+  border: 1px dotted lightslategray;
+}
+
+.circleCorrect {
+  width: 29px;
+  height: 30px;
+  background-color: red;
+  position: absolute;
+  top: 15px;
+  left: -9px;
+  border-radius: 25px;
+  display: block;
+  /* border: 1px solid gray; */
+}
+
+ol.answers > li > span {
+  width: 96%;
+  position: absolute;
+  padding: 4px 0.5em;
+  margin-left: 13px;
+  margin-top: 3px;
+}
+ol.answers > li::before {
+  content: counter(countLetters, upper-latin);
+  position: relative;
+  top: -9px;
+  left: -10px;
+  font-size: 13px;
+}
+
+ol.answers > li:after {
+  content: '';
+  width: 32px;
+  height: 30px;
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid gray;
+  left: -32px;
+}
+
+ol.answers > li:last-child() {
+  margin-left: -5px;
+}
+
+/* --- question holder --- */
+.question_holder {
+  margin-top: 10px;
+
+}
+
+div.displayQuestion {
+  display: flex;
+  margin-top: 15px;
+
+}
+
+div.displayQuestion > .flex_right {
+  margin-left: 10px;
+}
+
+.question_holder > span + .flex_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.question_holder > span + .flex_right > p {
+  margin-top: 10px;
+}
+
+.question_holder > span {
+  flex-basis: 20px;
+  text-align: center;
+  margin-top: 10px;
+  flex-shrink: 0;
+}
+
+.fa-square {
+  position: relative;
+  left: -50px;
+  top: -4px;
+  font-size: 32px;
+  z-index: -1;
+  color: #cecece;
+}
+/* --- rationale --- */
+section.rationale {
+  border: 1px solid #bbbfc3;
+  padding: 20px;
+  background-color: #e8e8e8;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+/* rationale tables */
+.rationale_table {
+  margin-top: 15px;
+  width: 100%;
+}
+.rationale_table,
+th,
+td {
+  border: 1px solid black;
+  border-spacing: 0px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+.left_col > tr > th {
+  width: 31%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.display {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  background-color: gray;
+}
+/* 
+.fas.fa-tasks.disabled,
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  background-color: gray;
+} */
+
+.bold {
+  font-weight: bold;
+}
+
+/* --- only for accessibility --- */
+.offscreen {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.offscreenBottomNav {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 760px) {
+  section.main-container > section.nav-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .question-num {
+    margin-bottom: 10px;
+    align-self: flex-start;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  button {
+    flex-basis: 110px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  button {
+    flex-basis: 98px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  button {
+    flex-basis: 93px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  button {
+    flex-basis: 80px;
+  }
+}
