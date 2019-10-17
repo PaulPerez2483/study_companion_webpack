@@ -3,6 +3,8 @@ const review = document.querySelectorAll('nav > button:nth-child(2)');
 const body = document.getElementsByTagName('BODY')[0];
 const next = document.getElementsByClassName('$next'); // returns a fake array of buttons
 const previous = document.getElementsByClassName('$previous'); // returns a fake array of buttons
+// const mathML = '<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>';
+
 let numArr = [];
 
 // checks the property of local storage object if found - don't do anything if not set qNum to local storage
@@ -32,6 +34,7 @@ setLocalStorage();
         localStorage.setItem('qNum', questionNum);
         reset();
         insertData()
+        setHeight()
     });
 });
 
@@ -55,6 +58,7 @@ setLocalStorage();
             localStorage.setItem('qNum', questionNum);
             reset();
             insertData()
+            setHeight()
         }
     });
 });
@@ -77,6 +81,7 @@ setHTML does the following...
 */
 function setHTML(questionBlock, q) {
     return `
+    
 <div role="region" aria-label="Orientation Information" class="offscreen a11y">${questionBlock.questionBlock[q].a11y}</div>
 <div class="test-question question_holder" role="region" aria-label="Question">
 <div class="displayQuestion">
@@ -89,12 +94,14 @@ function setHTML(questionBlock, q) {
 </div>
 
     <div  class="answers_holder">
+
     <ol id=_${q} data-correct="${questionBlock.questionBlock[q].correct.map(el => parseInt(el, 36) - 9)}" class="answers" role="region" aria-label="Response">
     ${questionBlock.questionBlock[q].answers.map(el => `<li><span>${el}</span></li>`).join('')}
     </ol >
-</div >
-</div >
-<section class="rationale display" role="region" aria-label="rationale">${questionBlock.questionBlock[q].rationale}</section>`;
+</div>
+</div>
+<section class="rationale display" role="region" aria-label="rationale">${questionBlock.questionBlock[q].rationale}</section>
+`;
 }
 
 
@@ -212,5 +219,20 @@ function correct() {
 
     }
 }
+
+
+// setting a height on question with images
+
+function setHeight(){
+    let setHeight =  document.getElementsByClassName('$etH');
+    if(setHeight.length > 0) {
+        // console.dir(setHeight)
+        for(let i = 0; i < setHeight.length; i++) {
+            let currentElement = setHeight[i];
+            currentElement.parentElement.parentElement.style.height='161px'
+        }
+    }
+}
+
 
 

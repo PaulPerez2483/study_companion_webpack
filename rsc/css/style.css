@@ -44,6 +44,7 @@ nav > button {
 /* --- styles for main and nav info ----  */
 section.main-container {
   padding: 25px;
+  width: 100%;
   /* width: 45vw; */
 }
 
@@ -85,6 +86,22 @@ h2 {
 .h2Color {
   color: #003082;
 }
+
+.passage_holder > p {
+  padding-bottom: 12px;
+}
+
+.questionWpassage{
+  margin-top: 13px;
+  margin-left: 15px;
+}
+.questionWpassage > p {
+  padding-bottom: 13px;
+}
+
+.italic {
+  font-style: italic;
+}
 /* ---  answers --- */
 section.root {
   padding-left: 10px;
@@ -93,7 +110,7 @@ section.root {
 
 ol.answers {
   list-style-type: none;
-  margin: 25px 0 25px 32px;
+  margin: 0px 0 25px 32px;
   counter-reset: countLetters;
   position: relative;
   display: flex;
@@ -152,6 +169,23 @@ ol.answers > li:after {
 
 ol.answers > li:last-child() {
   margin-left: -5px;
+}
+
+/* --- tables --- */
+.tableQuestion {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+tr > th:first-child{
+  text-align: left;
+}
+th {
+  font-weight: 100;
 }
 
 /* --- question holder --- */
@@ -286,6 +320,9 @@ a.disabled {
   }
   button {
     flex-basis: 110px;
+  }
+  ol.answers > li > span {
+    width: 87%;
   }
 }
 

@@ -3,81 +3,379 @@ let questionObject = [
         scenario: {
             passage: `<div role="region" aria-label="passage">
                         <div class="passage_holder">
-                            <p><strong>Questions 1<span aria-hidden="true">‐</span>
-            <span class="offscreen"> of </span>2</span> refer to the following scenario.</strong></p>
-            <p>
-                An upper-elementary school teacher is having students read and discuss the following text
-                and
-                table.
-            </p>
-            <p class="center"><strong>How Old Would You Be on Mars?</strong></p>
-            <p>
-                You know that a year on Earth is 365 days long, which is the amount of time it takes for
-                Earth
-                to orbit once around the Sun. But a year on Mars is 687 Earth days long. That’s how long it
-                takes Mars to orbit the Sun.
-            </p>
-            <p>
-                Imagine that people lived on Mars. A typical fifth grader would be only six Mars years old
-                because a Mars year is almost twice as long as an Earth year. If you lived on Mars, you
-                would have a Mars birthday only once every 687 Earth days.
-            </p>
-            </div></div>
-            <div class="question-holder"></div>`
+                        <h2 class="h2Color">Reading and Language Arts — Applied CKT Sample Test Questions</h2>
+
+                        <p class="italic">The sample questions that follow are examples of the kinds of questions that are on the test. They are not, however, 
+                        representative of the entire scope of the test in either content or difficulty. Answers with explanations follow the questions,
+                         along with information about the content topic, subtopic, and task of teaching targeted in each question.
+                        </p>
+
+                        <p><strong>Directions:</strong>
+                        Select the best answer or answers for each question below. Questions in formats that may be unfamiliar are followed by a note titled “How to Answer the Question Above.”
+                        </p>
+                        </div>
+                     </div>
+                    <div class="question-holder"></div>`
         },
 
         questionBlock: [{
             id: 1,
             a11y: `<p>How to Answer the Question Below</p>
                     <p>
-                        This is a multiple-choice question with three correct answers. You
-                        must select all three correct answers—and no incorrect answers—to
-                        earn credit for the question. In the actual test, the answer choices
-                        appear next to empty check boxes.
+                        How to Answer the Question Above This is a “select all that apply” question. You should select one, two, 
+                        or all three of the answer choices—however many are correct. You earn credit for the question only if you
+                        select all of the choices that are correct answers. In the actual test, the answer choices appear next to 
+                        empty check boxes. Click on a box to select the choice next to it; this causes an “x” to appear in the box.
+                        If you change your mind, click the box again to remove the “x.”
                     </p>
                 `,
-            question: `<p>During a discussion of the table, a student states, “It would take 687 days to get from Mars to the Sun.” Which of the following visual representations best helps address the student’s confusion by illustrating a topic that is critical to understanding the text and table but is not fully explained in them?</p>`,
-            answers: ['7 + 7 + 7 + 7', '8 + 10 + 10', '14 + 14', '20 + 8'],
-            correct: ['B', 'C', 'D'],
-            rationale: `<p>The correct answers are (B), (C), and (D).</p>`
+            question: `<p>A teacher is administering an informal reading assessment that includes the following sentences.</p>
+                         <div class="questionWpassage">
+                            <p>Monkeys like to play together. They wrestle and roll.</p>
+                            <p>When reading the sentences, one student says the word “wiggle” instead of “wrestle.” The student is
+                             likely using which of the following cuing systems?</p>
+                            <p>Select <u>all</u> that apply</p>
+                         </div>`,
+            answers: ['Semantic', 'Syntactic', 'Graphophonemic'],
+            correct: ['A', 'B', 'C'],
+            rationale: `<p> The correct answers are (A), (B), and (C). “Wiggle” makes sense in the sentence, suggesting 
+                            that the student may be using semantic cuing (A). Because “wiggle” is a verb, it fits the sentence
+                            syntactically (B), so the student may also be using syntactic cuing. Finally, “wiggle” looks similar
+                            to “wrestle,” since it shares the first letter and the last two letters and is approximately the same
+                            length, suggesting that the student may also be using graphophonemic cuing (C).</p>`
         },
         {
             id: 2,
-            a11y: `
-                    <p>How to Answer the Question Below</p>
+            a11y: `<p>How to Answer the Question Below</p>
                     <p>
-                        This is a “select all that apply” question. You should select one, two, or
-                        all three of the answer choices—however many are correct. You earn credit for 
-                        the question only if you select all of the choices that are correct answers. 
-                        In the actual test, the answer choices appear next to empty check boxes. 
-                        Click on a box to select the choice next to it; this causes an “x” to appear 
-                        in the box. If you change your mind, click the box again to remove the “x.
+                    This is a multiple-choice question with two correct answers. You must select both correct answers—and 
+                    no incorrect answers—to earn credit for the question. In the actual test, the answer choices appear next
+                     to empty check boxes. Click on a box to select the answer choice next to it; this causes an “x” to appear
+                      in the box. If you change your mind, click the box again to remove the “x.  
+                    </p>`,
+
+            question: `<p>Which two of the following words are appropriate to include in a lesson on the different phonemes created by r-controlled vowels? </p>`,
+            answers: ['Angry', 'Bridge', 'Bird', 'Real', 'Silver'],
+            correct: ['C', 'E'],
+            rationale: `<p> The correct answers are (C) and (E).  The /ir/ sound in “bird” (C), similar to the same sound in 
+                            “stir,” “third,” and “sir,” is an r-controlled sound. ”Silver” (E), also contains an r-controlled
+                             /er/ sound, similar to the same sound as in “winter,” “her,” and “fern.” Answer choices (A) “angry,”
+                             (B) “bridge,” and (D) “real” have vowels following the r sound, not before it, which means they are 
+                             not r-controlled sounds. 
+            </p>`
+        },
+        {
+            id: 3,
+            a11y: `<p>How to Answer the Question Below</p>
+                    <p>
+                    This is a “select all that apply” question. You should select one, two, or all three of the answer choices—however
+                    many are correct. You earn credit for the question only if you select all of the choices that are correct answers.
+                    In the actual test, the answer choices appear next to empty check boxes. Click on a box to select the choice next
+                    to it; this causes an “x” to appear in the box. If you change your mind, click the box again to remove the “x.”  
                     </p>
                 `,
-            question: `<p>Which of the following questions requires students to integrate information from both the text and the table when responding?</p>`,
-            answers: ['Is Earth closer to the Sun than Jupiter is?', 'Is a year on Saturn longer than a year on Earth?', 'How is a planet’s orbit connected to the length of the year on the planet?', 'If you are 10 years old in Earth years, how old are you in Mars years?'],
-            correct: ['A'],
-            rationale: `<p>The correct answers is (A).</p>`
+            question: `<p>A student uses a “W” to represent the initial sound in the word “doughnut.” In this scenario, which of the following patterns of thinking is the student demonstrating?
+            </p><p>Select <u>all</u> that apply</p>`,
+            answers: [' Believing that each sound can be represented by only one letter', ' Thinking that the position of a letter within a word does not affect the sound it makes ', ' Confusing a sound in a letter name with a sound represented by the letter'],
+            correct: ['C'],
+            rationale: `<p> The correct answer is (C) only. The student’s use of “w” to represent the /d/ in “doughnut” suggests 
+                            that the student has concluded that because the letter name for “w” starts with the sound /d/ 
+                            (as in “double-u”), the correct letter to represent /d/ is “w.” The substitution does not suggest a 
+                            misunderstanding about the impact of position on sound (B) or about how many letters can represent a 
+                            single sound (A).  
+            </p>`
         }
         ],
     },
     {
         questionBlock: [{
-            id: 3,
+            id: 4,
             a11y: `
                     <p>How to Answer the Question Below</p>
                     <p>
-                        This is a multiple-choice question with three correct answers. You
-                        must select all three correct answers—and no incorrect answers—to
-                        earn credit for the question. In the actual test, the answer choices
-                        appear next to empty check boxes.
+                    This is a “select all that apply” question. You should select one, two, or all three of the answer 
+                    choices—however many are correct. You earn credit for the question only if you select all of the 
+                    choices that are correct answers. In the actual test, the answer choices appear next to empty check
+                     boxes. Click on a box to select the choice next to it; this causes an “x” to appear in the box. 
+                     If you change your mind, click the box again to remove the “x.”
                     </p>
                 `,
-            question: `<p>Which question type best matches the question “What holds the planets in their orbits?” </p>`,
-            answers: ['Right There', 'Think and Search', 'Author and You', 'On My Own'],
+            question: `<p>A student writes the sentence “I like to eat ice cream” as follows.</p>
+                        <p><img src="/rsc/img/question_4.png" alt=""></p>
+                        <p>Which of the following print concepts should the teacher focus on when reading with the student?</p>
+                        <p>Select <u>all</u> that apply.</p>`,
+            answers: ['Text direction', 'Return sweep', 'Punctuation meaning'],
             correct: ['B'],
-            rationale: `<p>The correct answers is (B).</p>`
+            rationale: `<p> The correct answer is (B) only.  An important concept of print is knowing where to continue reading
+                            once a reader has come to the end of a line. In this case, the student’s writing suggests a need for
+                            reinforcement of this concept; after writing the first line, the student began a new line of text after
+                            “eat” and “is,” even though these words could have fit on the same line as “crem.” (A) is incorrect
+                            because the student has written the words from left to right, so the teacher does not need to reinforce
+                            the concept of text direction. Finally, the teacher’s focus does not appear to be needed on punctuation
+                            meaning (C), since the student correctly punctuates the sentence at the end with a period.</p>`
         }]
 
-    }
+    },
+    {
+        scenario: {
+            passage: `<div role="region" aria-label="passage">
+                        <div class="passage_holder">
+                        <h2 class="h2Color">Mathematics—Applied CKT  Sample Test Questions</h2>
+
+                        <p class="italic">
+                        The sample questions that follow are examples of the kinds of questions that are on the test. They are not, however, representative of the entire scope of the test in either content or difficulty. Answers with explanations follow the questions, along with information about the content topic, subtopic, and task of teaching targeted in each question.
+                        </p>
+
+                        <p><strong>Directions:</strong>
+                        Select the best answer or answers for each question below. Questions in formats that may be unfamiliar are followed by a note entitled “How to Answer the Question Above.”
+                        </p>
+                        </div>
+                     </div>
+                    <div class="question-holder"></div>`
+        },
+
+        questionBlock: [{
+            id: 5,
+            a11y: `<p>How to Answer the Question Below</p>
+                    <p> This is a multiple-choice question with three correct answers.
+                        You must select all three correct answers—and no incorrect
+                        answers—to earn credit for the question. In the actual test,
+                        the answer choices appear next to empty check boxes. Click
+                        on a box to select the answer choice next to it; this causes
+                        an “x” to appear in the box. If you change your mind, click
+                        the box again to remove the ‘x.”
+                    </p>
+                `,
+            question: `<p>Which three of the following expressions are
+            equivalent to 3,956 × 4 ?</p>`,
+            answers: [' 3000 x 4 + 900 x 4 + 50 x 4 + 6 x 4', '(4000 x 4 - 100 x 4) + (60 x 4 - 4 x 4)', ' 4 x 3 + 4 x 9 + 4 x 5 + 4 x 6', ' 4,000 x 4 - 40 x 4 - 4 x 4', '3 x 1,000 x 4 + 95 x 100 x 4 + 6 x 1 x 4'],
+            correct: ['A', 'B', 'D'],
+            rationale: `<p>The correct answers are (A), (B), and (D). Since 3,956
+            can be written as 3,000 + 900 + 50 + 6 , the given
+            expression is equivalent to (3,000 + 900 + 50 + 6)× 4 .
+            Applying the distributive property yields
+            3,000 × 4 + 900 × 4 + 50 × 4 + 6 × 4 , which is the
+            expression in (A). Since 3,956 can be written as
+            3,900 + 56 , the given expression is equivalent to
+            (3,900 + 56)× 4 . Applying the distributive property
+            yields 3,900 × 4 + 56 × 4 . One can rewrite 3,900 as
+            4,000 −100 and 56 as 60 − 4 , which yields the
+            equivalent expression (4,000 −100)× 4 + (60 − 4)× 4 .
+            Applying the distributive property again yields
+            (4,000 −100)× 4 + (60 − 4)× 4 , which is the expression
+            in (B). Since 3,956 can be written as 4,000 − 40 − 4 , the
+            given expression is equivalent to (4,000 − 40 − 4)× 4 .
+            Applying the distributive property yields
+            4,000 × 4 − 40 × 4 − 4 × 4 , which is the expression in
+            (D). Applying the distributive property to the
+            expression in (C) yields 4 × (3 + 9 + 5+ 6) , which is
+            equivalent to 4 × 23 , but this expression is not
+            equivalent to the given expression. Since 6 ×1= 6 ,
+            applying the distributive property to the expression in
+            (E) yields (3 ×1,000 + 95×100 + 6)× 4 , which is
+            equivalent to (3,000 + 9,500 + 6)× 4 . The sum of the
+            numbers in the parentheses is 12,506; therefore, the
+            expression in (E) is not equivalent to the given
+            expression.</p>`
+        },
+        {
+            id: 6,
+            a11y: `<p>How to Answer the Question Below</p>
+                    <p>
+                    This is a multiple-choice question with two correct answers. You must select both correct answers—and 
+                    no incorrect answers—to earn credit for the question. In the actual test, the answer choices appear next
+                     to empty check boxes. Click on a box to select the answer choice next to it; this causes an “x” to appear
+                      in the box. If you change your mind, click the box again to remove the “x.  
+                    </p>`,
+
+            question: `<p>Dora made a pile of 5 counters. Then Mr. Levy
+                         asked her to add counters to her pile of 5 so
+                         that the pile would have 7 counters. Dora
+                         counted out 7 more counters and added them
+                         to the pile of 5 counters.</p>
+
+                        <p>Which of the following most likely explains the
+                        reason behind Dora’s error?</p>`,
+            answers: ['Dora does not fully understand one-toone correspondence between numbers and objects.',
+                      'Dora does not yet have a concept of the quantity 7.',
+                      'Dora does not yet understand that one quantity can be composed of two smaller quantities.',
+                      'Dora does not yet know her number facts for sums greater than 10.'],
+            correct: ['B'],
+            rationale: `<p> The correct answer is (B). In the first solution, 4x and
+            2 are added to get 6x , but the 4x term contains a
+            variable, whereas the 2 is a constant term; it is incorrect
+            to add 4x and 2 because they are not like terms.
+            Similarly, in the second solution, 2x and 3 are added to
+            get 5x , but 2x and 3 are not like terms, so this strategy
+            is not valid. Therefore, understanding the importance of
+            combining like terms is the answer choice that is most
+            clearly highlighted by asking students to critique the
+            two invalid strategies. 
+            </p>`
+        },
+        ]
+    },
+    {
+        questionBlock: [{
+            id: 7,
+            a11y: `
+                    <p>How to Answer the Question Below</p>
+                    <p>
+                    This is a multiple-choice question with three correct answers.
+                    You must select all three correct answers—and no incorrect
+                    answers—to earn credit for the question. In the actual test,
+                    the answer choices appear next to empty check boxes. Click
+                    on a box to select the answer choice next to it; this causes
+                    an “x” to appear in the box. If you change your mind, click
+                    the box again to remove the “x.”
+                    </p>
+                `,
+            question: `<p>Ms. Dale wants her students to develop
+                    mental strategies that can be used to find the
+                    answer to addition and subtraction problems,
+                    including composing and decomposing
+                    numbers based on place value.</p>
+                    <p>In one lesson, she asks her students to find
+                    numbers whose sum or difference is 28. She
+                    then has seven students share their answers
+                    as she writes them on the board.</p>
+                    <p>Which three of the following student answers
+                    are most closely related to Ms. Dale’s goal
+                    that students will be able to compose and
+                    decompose numbers based on place value?
+                    </p>`,
+            answers: ['7 + 7 + 7 + 7',
+            '8 + 10 + 10',
+            '14 + 14',
+            '20 + 8',
+            '20 + 10 − 2',
+            '25 + 3',
+            '39 − 11'],
+            correct: ['B', 'D','E'],
+            rationale: `<p> The correct answers are (B), (D), and (E). A
+            decomposition of numbers based on place value
+            means that the number is written as the sum or
+            difference of tens and ones. In (B), the number 28 is
+            decomposed as the sum of 2 tens, 10 +10 , and 8 ones.
+            In (D), the number 28 is decomposed as the sum of 2
+            tens, 20, and 8 ones. In (E), the number 28 is
+            decomposed as the difference of 3 tens, written as the
+            sum of 2 tens and 1 ten, and 2 ones. (A) is incorrect
+            because the number 28 is decomposed as a repeated
+            addition of the number 7, so this decomposition is
+            related to skip counting. (C) is incorrect because the
+            number 28 is decomposed as the sum of 14 and itself,
+            so this decomposition is related to doubles. (F) and (G)
+            are incorrect because although both answers are
+            decompositions of 28, neither of the numbers in either
+            decomposition is a multiple of 10.</p>`
+        }]
+
+    },
+    {
+        scenario: {
+            passage: `<div role="region" aria-label="passage">
+                        <div class="passage_holder">
+                        <h2 class="h2Color">Science—CKT Sample Test Questions</h2>
+                        <p>The sample questions that follow illustrate the kinds of questions on the test. They are not, however, representative of the entire scope of the test in either content or difficulty. Answers with explanations follow the questions.</p>
+                        <p><strong>Directions:</strong> Select the best answer or answers for each question below. Questions in formats that may be unfamiliar are followed by a note titled “How to Answer the Question Above.”</p>
+                        <p>A lower elementary grade class has been studying the weather. Below are some data that the students have collected.</p>
+                        <table class="tableQuestion">
+                        <caption><strong>Class Weather Data (°C)</strong></caption>
+                        <thead>
+                        <tr>
+                        <th></th>
+                        <th id="ColHdr2">Day 1</th>
+                        <th id="ColHdr3">Day 2</th>
+                        <th id="ColHdr4">Day 3</th>
+                        <th id="ColHdr5">Day 4</th>
+                        <th id="ColHdr6">Day 5</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <th id="RowHdr2">Morning (8:00 A.M.)</th>
+                        <td headers="ColHdr2 RowHdr2">10</td>
+                        <td headers="ColHdr3 RowHdr2">9</td>
+                        <td headers="ColHdr4 RowHdr2">7</td>
+                        <td headers="ColHdr5 RowHdr2">9</td>
+                        <td headers="ColHdr6 RowHdr2">13</td>
+                        </tr>
+                        <tr>
+                        <th id="RowHdr3">Noon (12:00)</th>
+                        <td headers="ColHdr2 RowHdr3">17</td>
+                        <td headers="ColHdr3 RowHdr3">14</td>
+                        <td headers="ColHdr4 RowHdr3">13</td>
+                        <td headers="ColHdr5 RowHdr3">16</td>
+                        <td headers="ColHdr6 RowHdr3">18</td>
+                        </tr>
+                        <tr>
+                        <th id="RowHdr4">Afternoon (4:00 P.M.)</th>
+                        <td headers="ColHdr2 RowHdr4">14</td>
+                        <td headers="ColHdr3 RowHdr4">11</td>
+                        <td headers="ColHdr4 RowHdr4">10</td>
+                        <td headers="ColHdr5 RowHdr4">12</td>
+                        <td headers="ColHdr6 RowHdr4">15</td>
+                        </tr>
+                        <tr>
+                        <th id="RowHdr5">Evening (8:00 P.M.)</th>
+                        <td headers="ColHdr2 RowHdr5">11</td>
+                        <td headers="ColHdr3 RowHdr5">7</td>
+                        <td headers="ColHdr4 RowHdr5">4</td>
+                        <td headers="ColHdr5 RowHdr5">8</td>
+                        <td headers="ColHdr6 RowHdr5">12</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        </div>
+                     </div>
+                    <div class="question-holder"></div>`
+        },
+
+        questionBlock: [{
+            id: 8,
+            a11y: `<p>How to Answer the Question Below</p>
+                    <p>
+                        How to Answer the Question Above This is a “select all that apply” question. You should select one, two, 
+                        or all three of the answer choices—however many are correct. You earn credit for the question only if you
+                        select all of the choices that are correct answers. In the actual test, the answer choices appear next to 
+                        empty check boxes. Click on a box to select the choice next to it; this causes an “x” to appear in the box.
+                        If you change your mind, click the box again to remove the “x.”
+                    </p>
+                `,
+            question: `<p>Which of the following representations would best help the students describe the relationship between time of day and temperature?
+                         </p>`,
+            answers: ['<img class="$etH" src="/rsc/img/question_8_A.png" alt="">',
+                      '<img class="$etH" src="/rsc/img/question_8_B.png" alt="">',
+                      '<img class="$etH" src="/rsc/img/question_8_C.png" alt="">',
+                      '<img class="$etH" src="/rsc/img/question_8_D.png" alt="">'
+                    ],
+            correct: ['B'],
+            rationale: `<p> The correct answer is (B). This question tests your
+            ability to select a graphical representation of data that
+            will reveal a possible relationship between two specific
+            variables. For the activity described, the graph in choice
+            (B) is the best representation of the students’ data
+            because it reveals how temperature changed during
+            the day for each of five different days, which will allow
+            the students to identify the relationship between time
+            of day and temperature. In contrast, the other graphs
+            are not as useful for revealing the relationship between
+            time of day and temperature. The graph in choice (A)
+            shows the average temperature for each of five different
+            days but does not reveal how the temperature changed
+            during any of those days. Similarly, the graph in choice
+            (C) shows the morning temperature for each of five
+            different days but does not reveal how the temperature
+            changed during any of those days. The graph in choice
+            (D) shows how the temperature at a particular time of
+            day changed over five consecutive days, but the graph
+            is not the best representation for identifying a pattern in
+            how the temperature changed during each of those
+            days..</p>`
+        },
+        ]
+    },
+    
+    
 ]
