@@ -1,0 +1,31 @@
+{
+  "name": "study_companionV6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch",
+    "webpack:dev": "npm run webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulPerez2483/study_companionV2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulPerez2483/study_companionV2/issues"
+  },
+  "homepage": "https://github.com/PaulPerez2483/study_companionV2#readme",
+  "dependencies": {
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6"
+  }
+}

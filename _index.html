@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- testing -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="rsc/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+</head>
+
+<body>
+    <div id="loading"></div>
+    <section class="main-container $multi">
+            <section class="nav-info sticky">
+                    <div class="question-num" role="region" aria-label="title">
+                        <p class="_updateText bold"></p>
+                    </div>
+                    <nav>
+                        <button class="$previous">
+                            <span class="nav-font">PREV</span>
+                            <span><i class="fas fa-chevron-left"></i></span>
+                            <span class="offscreen">Previous</span>
+                        </button>
+                        <button class="$next">
+                            <span><i class="fas fa-chevron-right"></i></span>
+                            <span class="nav-font">NEXT</span>
+                            <span class="offscreen">Next</span>
+                        </button>
+                    </nav>
+                </section>
+        <section class="root">
+            <div role="region" aria-label="Orientation Information" class="offscreen"></div>
+            <div class="single_question"></div>
+
+
+        </section>
+        <section aria-label="Bottom" class="nav-info offscreenBottomNav">
+            <nav>
+                <button class="fas fa-chevron-left $previous">
+                    <span class="offscreen">Previous</span>
+                </button>
+                <!-- <button class="fas fa-tasks">
+                    <span class="offscreen">Answer</span>
+                </button> -->
+                <button class="fas fa-chevron-right $next">
+                    <span class="offscreen">Next</span>
+                </button>
+            </nav>
+        </section>
+    </section>
+
+    <!-- <script src="rsc/js/config.js"></script> -->
+    <!-- <script src="rsc/js/questionObj.js"></script> -->
+    <script src="dist/bundle.js"></script>
+    <!-- <script src="rsc/js/data.js"></script> -->
+        <!-- <script src="rsc/js/babel.js"></script> -->
+</body>
+
+</html>

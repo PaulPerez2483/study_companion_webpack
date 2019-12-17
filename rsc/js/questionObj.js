@@ -6,13 +6,19 @@ let questionObject = [
                         <h2 class="h2Color">Reading and Language Arts — Applied CKT Sample Test Questions</h2>
 
                         <p class="italic">The sample questions that follow are examples of the kinds of questions that are on the test. They are not, however, 
-                        representative of the entire scope of the test in either content or difficulty. Answers with explanations follow the questions,
+                        representative of the entire scope of the test in either content or difficulty. Answers with rationales follow the questions,
                          along with information about the content topic, subtopic, and task of teaching targeted in each question.
                         </p>
+                        <span id="hideMe">
+                        <input type="checkbox" id="show-all">
+                        <label for="show-all">Show all Answers and Rationales</label>
+                        </span>
 
                         <p><strong>Directions:</strong>
                         Select the best answer or answers for each question below. Questions in formats that may be unfamiliar are followed by a note titled “How to Answer the Question Above.”
                         </p>
+                  
+
                         </div>
                      </div>
                     <div class="question-holder"></div>`
@@ -84,37 +90,228 @@ let questionObject = [
                             misunderstanding about the impact of position on sound (B) or about how many letters can represent a 
                             single sound (A).  
             </p>`
+        },
+        {
+            id: 4,
+            a11y: `<p>How to Answer the Question Below</p>
+                    <p>
+                    This is a “select all that apply” question. You should select one, two, or all three of the answer choices—however
+                    many are correct. You earn credit for the question only if you select all of the choices that are correct answers.
+                    In the actual test, the answer choices appear next to empty check boxes. Click on a box to select the choice next
+                    to it; this causes an “x” to appear in the box. If you change your mind, click the box again to remove the “x.”  
+                    </p>
+                `,
+            question: `<p>A student uses a “W” to represent the initial sound in the word “doughnut.” In this scenario, which of the following patterns of thinking is the student demonstrating?
+            </p><p>Select <u>all</u> that apply</p>`,
+            answers: [' Believing that each sound can be represented by only one letter', ' Thinking that the position of a letter within a word does not affect the sound it makes ', ' Confusing a sound in a letter name with a sound represented by the letter'],
+            correct: ['C'],
+            rationale: `<p> The correct answer is (C) only. The student’s use of “w” to represent the /d/ in “doughnut” suggests 
+                            that the student has concluded that because the letter name for “w” starts with the sound /d/ 
+                            (as in “double-u”), the correct letter to represent /d/ is “w.” The substitution does not suggest a 
+                            misunderstanding about the impact of position on sound (B) or about how many letters can represent a 
+                            single sound (A).  
+            </p>`
+        },
+        {
+            id: 5,
+            a11y: `<p>How to Answer the Question Below</p>
+                    <p>
+                    This is a “select all that apply” question. You should select one, two, or all three of the answer choices—however
+                    many are correct. You earn credit for the question only if you select all of the choices that are correct answers.
+                    In the actual test, the answer choices appear next to empty check boxes. Click on a box to select the choice next
+                    to it; this causes an “x” to appear in the box. If you change your mind, click the box again to remove the “x.”  
+                    </p>
+                `,
+            question: `<p>A student uses a “W” to represent the initial sound in the word “doughnut.” In this scenario, which of the following patterns of thinking is the student demonstrating?
+            </p><p>Select <u>all</u> that apply</p>`,
+            answers: [' Believing that each sound can be represented by only one letter', ' Thinking that the position of a letter within a word does not affect the sound it makes ', ' Confusing a sound in a letter name with a sound represented by the letter'],
+            correct: ['C'],
+            rationale: `<p> The correct answer is (C) only. The student’s use of “w” to represent the /d/ in “doughnut” suggests 
+                            that the student has concluded that because the letter name for “w” starts with the sound /d/ 
+                            (as in “double-u”), the correct letter to represent /d/ is “w.” The substitution does not suggest a 
+                            misunderstanding about the impact of position on sound (B) or about how many letters can represent a 
+                            single sound (A).  
+            </p>`
+        },
+        {
+            id: 6,
+            a11y: `<p>How to Answer the Question Below</p>
+                    <p>
+                    This is a “select all that apply” question. You should select one, two, or all three of the answer choices—however
+                    many are correct. You earn credit for the question only if you select all of the choices that are correct answers.
+                    In the actual test, the answer choices appear next to empty check boxes. Click on a box to select the choice next
+                    to it; this causes an “x” to appear in the box. If you change your mind, click the box again to remove the “x.”  
+                    </p>
+                `,
+            question: `<p>A student uses a “W” to represent the initial sound in the word “doughnut.” In this scenario, which of the following patterns of thinking is the student demonstrating?
+            </p><p>Select <u>all</u> that apply</p>`,
+            answers: [' Believing that each sound can be represented by only one letter', ' Thinking that the position of a letter within a word does not affect the sound it makes ', ' Confusing a sound in a letter name with a sound represented by the letter'],
+            correct: ['C'],
+            rationale: `<p> The correct answer is (C) only. The student’s use of “w” to represent the /d/ in “doughnut” suggests 
+                            that the student has concluded that because the letter name for “w” starts with the sound /d/ 
+                            (as in “double-u”), the correct letter to represent /d/ is “w.” The substitution does not suggest a 
+                            misunderstanding about the impact of position on sound (B) or about how many letters can represent a 
+                            single sound (A).  
+            </p>`
+        },
+        {
+            id: 7,
+            a11y: `<p>How to Answer the Question Below</p>
+                    <p>
+                    This is a “select all that apply” question. You should select one, two, or all three of the answer choices—however
+                    many are correct. You earn credit for the question only if you select all of the choices that are correct answers.
+                    In the actual test, the answer choices appear next to empty check boxes. Click on a box to select the choice next
+                    to it; this causes an “x” to appear in the box. If you change your mind, click the box again to remove the “x.”  
+                    </p>
+                `,
+            question: `<p>A student uses a “W” to represent the initial sound in the word “doughnut.” In this scenario, which of the following patterns of thinking is the student demonstrating?
+            </p><p>Select <u>all</u> that apply</p>`,
+            answers: [' Believing that each sound can be represented by only one letter', ' Thinking that the position of a letter within a word does not affect the sound it makes ', ' Confusing a sound in a letter name with a sound represented by the letter'],
+            correct: ['C'],
+            rationale: `<p> The correct answer is (C) only. The student’s use of “w” to represent the /d/ in “doughnut” suggests 
+                            that the student has concluded that because the letter name for “w” starts with the sound /d/ 
+                            (as in “double-u”), the correct letter to represent /d/ is “w.” The substitution does not suggest a 
+                            misunderstanding about the impact of position on sound (B) or about how many letters can represent a 
+                            single sound (A).  
+            </p>`
         }
         ],
     },
     {
+        scenario: {
+            passage: `<div role="region" aria-label="passage">
+                        <div class="passage_holder">
+                        <h2 class="h2Color">Reading and Language Arts — Applied CKT Sample Test Questions</h2>
+
+                        <p class="italic">The sample questions that follow are examples of the kinds of questions that are on the test. They are not, however, 
+                        representative of the entire scope of the test in either content or difficulty. Answers with rationales follow the questions,
+                         along with information about the content topic, subtopic, and task of teaching targeted in each question.
+                        </p>
+                        <span id="hideMe">
+                        <input type="checkbox" id="show-all">
+                        <label for="show-all">Show all Answers and Rationales</label>
+                        </span>
+
+                        <p><strong>Directions:</strong>
+                        Select the best answer or answers for each question below. Questions in formats that may be unfamiliar are followed by a note titled “How to Answer the Question Above.”
+                        </p>
+                  
+
+                        </div>
+                     </div>
+                    <div class="question-holder"></div>`
+        },
+
         questionBlock: [{
-            id: 4,
-            a11y: `
-                    <p>How to Answer the Question Below</p>
+            id: 8,
+            a11y: `<p>How to Answer the Question Below</p>
                     <p>
-                    This is a “select all that apply” question. You should select one, two, or all three of the answer 
-                    choices—however many are correct. You earn credit for the question only if you select all of the 
-                    choices that are correct answers. In the actual test, the answer choices appear next to empty check
-                     boxes. Click on a box to select the choice next to it; this causes an “x” to appear in the box. 
-                     If you change your mind, click the box again to remove the “x.”
+                        How to Answer the Question Above This is a “select all that apply” question. You should select one, two, 
+                        or all three of the answer choices—however many are correct. You earn credit for the question only if you
+                        select all of the choices that are correct answers. In the actual test, the answer choices appear next to 
+                        empty check boxes. Click on a box to select the choice next to it; this causes an “x” to appear in the box.
+                        If you change your mind, click the box again to remove the “x.”
                     </p>
                 `,
-            question: `<p>A student writes the sentence “I like to eat ice cream” as follows.</p>
-                        <p><img src="/rsc/img/question_4.png" alt=""></p>
-                        <p>Which of the following print concepts should the teacher focus on when reading with the student?</p>
-                        <p>Select <u>all</u> that apply.</p>`,
-            answers: ['Text direction', 'Return sweep', 'Punctuation meaning'],
-            correct: ['B'],
-            rationale: `<p> The correct answer is (B) only.  An important concept of print is knowing where to continue reading
-                            once a reader has come to the end of a line. In this case, the student’s writing suggests a need for
-                            reinforcement of this concept; after writing the first line, the student began a new line of text after
-                            “eat” and “is,” even though these words could have fit on the same line as “crem.” (A) is incorrect
-                            because the student has written the words from left to right, so the teacher does not need to reinforce
-                            the concept of text direction. Finally, the teacher’s focus does not appear to be needed on punctuation
-                            meaning (C), since the student correctly punctuates the sentence at the end with a period.</p>`
-        }]
+            question: `<p>A teacher is administering an informal reading assessment that includes the following sentences.</p>
+                         <div class="questionWpassage">
+                            <p>Monkeys like to play together. They wrestle and roll.</p>
+                            <p>When reading the sentences, one student says the word “wiggle” instead of “wrestle.” The student is
+                             likely using which of the following cuing systems?</p>
+                            <p>Select <u>all</u> that apply</p>
+                         </div>`,
+            answers: ['Semantic', 'Syntactic', 'Graphophonemic'],
+            correct: ['A', 'B', 'C'],
+            rationale: `<p> The correct answers are (A), (B), and (C). “Wiggle” makes sense in the sentence, suggesting 
+                            that the student may be using semantic cuing (A). Because “wiggle” is a verb, it fits the sentence
+                            syntactically (B), so the student may also be using syntactic cuing. Finally, “wiggle” looks similar
+                            to “wrestle,” since it shares the first letter and the last two letters and is approximately the same
+                            length, suggesting that the student may also be using graphophonemic cuing (C).</p>`
+        },
+        {
+            id: 9,
+            a11y: `<p>How to Answer the Question Below</p>
+                    <p>
+                    This is a multiple-choice question with two correct answers. You must select both correct answers—and 
+                    no incorrect answers—to earn credit for the question. In the actual test, the answer choices appear next
+                     to empty check boxes. Click on a box to select the answer choice next to it; this causes an “x” to appear
+                      in the box. If you change your mind, click the box again to remove the “x.  
+                    </p>`,
 
+            question: `<p>Which two of the following words are appropriate to include in a lesson on the different phonemes created by r-controlled vowels? </p>`,
+            answers: ['Angry', 'Bridge', 'Bird', 'Real', 'Silver'],
+            correct: ['C', 'E'],
+            rationale: `<p> The correct answers are (C) and (E).  The /ir/ sound in “bird” (C), similar to the same sound in 
+                            “stir,” “third,” and “sir,” is an r-controlled sound. ”Silver” (E), also contains an r-controlled
+                             /er/ sound, similar to the same sound as in “winter,” “her,” and “fern.” Answer choices (A) “angry,”
+                             (B) “bridge,” and (D) “real” have vowels following the r sound, not before it, which means they are 
+                             not r-controlled sounds. 
+            </p>`
+        },
+        {
+            id: 10,
+            a11y: `<p>How to Answer the Question Below</p>
+                    <p>
+                    This is a “select all that apply” question. You should select one, two, or all three of the answer choices—however
+                    many are correct. You earn credit for the question only if you select all of the choices that are correct answers.
+                    In the actual test, the answer choices appear next to empty check boxes. Click on a box to select the choice next
+                    to it; this causes an “x” to appear in the box. If you change your mind, click the box again to remove the “x.”  
+                    </p>
+                `,
+            question: `<p>A student uses a “W” to represent the initial sound in the word “doughnut.” In this scenario, which of the following patterns of thinking is the student demonstrating?
+            </p><p>Select <u>all</u> that apply</p>`,
+            answers: [' Believing that each sound can be represented by only one letter', ' Thinking that the position of a letter within a word does not affect the sound it makes ', ' Confusing a sound in a letter name with a sound represented by the letter'],
+            correct: ['C'],
+            rationale: `<p> The correct answer is (C) only. The student’s use of “w” to represent the /d/ in “doughnut” suggests 
+                            that the student has concluded that because the letter name for “w” starts with the sound /d/ 
+                            (as in “double-u”), the correct letter to represent /d/ is “w.” The substitution does not suggest a 
+                            misunderstanding about the impact of position on sound (B) or about how many letters can represent a 
+                            single sound (A).  
+            </p>`
+        },
+        {
+            id: 11,
+            a11y: `<p>How to Answer the Question Below</p>
+                    <p>
+                    This is a “select all that apply” question. You should select one, two, or all three of the answer choices—however
+                    many are correct. You earn credit for the question only if you select all of the choices that are correct answers.
+                    In the actual test, the answer choices appear next to empty check boxes. Click on a box to select the choice next
+                    to it; this causes an “x” to appear in the box. If you change your mind, click the box again to remove the “x.”  
+                    </p>
+                `,
+            question: `<p>A student uses a “W” to represent the initial sound in the word “doughnut.” In this scenario, which of the following patterns of thinking is the student demonstrating?
+            </p><p>Select <u>all</u> that apply</p>`,
+            answers: [' Believing that each sound can be represented by only one letter', ' Thinking that the position of a letter within a word does not affect the sound it makes ', ' Confusing a sound in a letter name with a sound represented by the letter'],
+            correct: ['C'],
+            rationale: `<p> The correct answer is (C) only. The student’s use of “w” to represent the /d/ in “doughnut” suggests 
+                            that the student has concluded that because the letter name for “w” starts with the sound /d/ 
+                            (as in “double-u”), the correct letter to represent /d/ is “w.” The substitution does not suggest a 
+                            misunderstanding about the impact of position on sound (B) or about how many letters can represent a 
+                            single sound (A).  
+            </p>`
+        },
+        {
+            id: 12,
+            a11y: `<p>How to Answer the Question Below</p>
+                    <p>
+                    This is a “select all that apply” question. You should select one, two, or all three of the answer choices—however
+                    many are correct. You earn credit for the question only if you select all of the choices that are correct answers.
+                    In the actual test, the answer choices appear next to empty check boxes. Click on a box to select the choice next
+                    to it; this causes an “x” to appear in the box. If you change your mind, click the box again to remove the “x.”  
+                    </p>
+                `,
+            question: `<p>A student uses a “W” to represent the initial sound in the word “doughnut.” In this scenario, which of the following patterns of thinking is the student demonstrating?
+            </p><p>Select <u>all</u> that apply</p>`,
+            answers: [' Believing that each sound can be represented by only one letter', ' Thinking that the position of a letter within a word does not affect the sound it makes ', ' Confusing a sound in a letter name with a sound represented by the letter'],
+            correct: ['C'],
+            rationale: `<p> The correct answer is (C) only. The student’s use of “w” to represent the /d/ in “doughnut” suggests 
+                            that the student has concluded that because the letter name for “w” starts with the sound /d/ 
+                            (as in “double-u”), the correct letter to represent /d/ is “w.” The substitution does not suggest a 
+                            misunderstanding about the impact of position on sound (B) or about how many letters can represent a 
+                            single sound (A).  
+            </p>`
+        }
+        ],
     },
     {
         scenario: {
@@ -123,19 +320,23 @@ let questionObject = [
                         <h2 class="h2Color">Mathematics—Applied CKT  Sample Test Questions</h2>
 
                         <p class="italic">
-                        The sample questions that follow are examples of the kinds of questions that are on the test. They are not, however, representative of the entire scope of the test in either content or difficulty. Answers with explanations follow the questions, along with information about the content topic, subtopic, and task of teaching targeted in each question.
+                        The sample questions that follow are examples of the kinds of questions that are on the test. They are not, however, representative of the entire scope of the test in either content or difficulty. Answers with rationales follow the questions, along with information about the content topic, subtopic, and task of teaching targeted in each question.
                         </p>
-
+                        <span id="hideMe">
+                        <input type="checkbox" id="show-all">
+                        <label for="show-all">Show all Rationales</label>
+                        </span>
                         <p><strong>Directions:</strong>
                         Select the best answer or answers for each question below. Questions in formats that may be unfamiliar are followed by a note entitled “How to Answer the Question Above.”
                         </p>
                         </div>
+                        
                      </div>
                     <div class="question-holder"></div>`
         },
 
         questionBlock: [{
-            id: 5,
+            id: 13,
             a11y: `<p>How to Answer the Question Below</p>
                     <p> This is a multiple-choice question with three correct answers.
                         You must select all three correct answers—and no incorrect
@@ -179,7 +380,7 @@ let questionObject = [
             expression.</p>`
         },
         {
-            id: 6,
+            id: 14,
             a11y: `<p>How to Answer the Question Below</p>
                     <p>
                     This is a multiple-choice question with two correct answers. You must select both correct answers—and 
@@ -217,7 +418,7 @@ let questionObject = [
     },
     {
         questionBlock: [{
-            id: 7,
+            id: 15,
             a11y: `
                     <p>How to Answer the Question Below</p>
                     <p>
@@ -272,110 +473,22 @@ let questionObject = [
         }]
 
     },
+    
     {
-        scenario: {
-            passage: `<div role="region" aria-label="passage">
-                        <div class="passage_holder">
-                        <h2 class="h2Color">Science—CKT Sample Test Questions</h2>
-                        <p>The sample questions that follow illustrate the kinds of questions on the test. They are not, however, representative of the entire scope of the test in either content or difficulty. Answers with explanations follow the questions.</p>
-                        <p><strong>Directions:</strong> Select the best answer or answers for each question below. Questions in formats that may be unfamiliar are followed by a note titled “How to Answer the Question Above.”</p>
-                        <p>A lower elementary grade class has been studying the weather. Below are some data that the students have collected.</p>
-                        <table class="tableQuestion">
-                        <caption><strong>Class Weather Data (°C)</strong></caption>
-                        <thead>
-                        <tr>
-                        <th></th>
-                        <th id="ColHdr2">Day 1</th>
-                        <th id="ColHdr3">Day 2</th>
-                        <th id="ColHdr4">Day 3</th>
-                        <th id="ColHdr5">Day 4</th>
-                        <th id="ColHdr6">Day 5</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                        <th id="RowHdr2">Morning (8:00 A.M.)</th>
-                        <td headers="ColHdr2 RowHdr2">10</td>
-                        <td headers="ColHdr3 RowHdr2">9</td>
-                        <td headers="ColHdr4 RowHdr2">7</td>
-                        <td headers="ColHdr5 RowHdr2">9</td>
-                        <td headers="ColHdr6 RowHdr2">13</td>
-                        </tr>
-                        <tr>
-                        <th id="RowHdr3">Noon (12:00)</th>
-                        <td headers="ColHdr2 RowHdr3">17</td>
-                        <td headers="ColHdr3 RowHdr3">14</td>
-                        <td headers="ColHdr4 RowHdr3">13</td>
-                        <td headers="ColHdr5 RowHdr3">16</td>
-                        <td headers="ColHdr6 RowHdr3">18</td>
-                        </tr>
-                        <tr>
-                        <th id="RowHdr4">Afternoon (4:00 P.M.)</th>
-                        <td headers="ColHdr2 RowHdr4">14</td>
-                        <td headers="ColHdr3 RowHdr4">11</td>
-                        <td headers="ColHdr4 RowHdr4">10</td>
-                        <td headers="ColHdr5 RowHdr4">12</td>
-                        <td headers="ColHdr6 RowHdr4">15</td>
-                        </tr>
-                        <tr>
-                        <th id="RowHdr5">Evening (8:00 P.M.)</th>
-                        <td headers="ColHdr2 RowHdr5">11</td>
-                        <td headers="ColHdr3 RowHdr5">7</td>
-                        <td headers="ColHdr4 RowHdr5">4</td>
-                        <td headers="ColHdr5 RowHdr5">8</td>
-                        <td headers="ColHdr6 RowHdr5">12</td>
-                        </tr>
-                        </tbody>
-                        </table>
-                        </div>
-                     </div>
-                    <div class="question-holder"></div>`
-        },
-
         questionBlock: [{
-            id: 8,
-            a11y: `<p>How to Answer the Question Below</p>
-                    <p>
-                        How to Answer the Question Above This is a “select all that apply” question. You should select one, two, 
-                        or all three of the answer choices—however many are correct. You earn credit for the question only if you
-                        select all of the choices that are correct answers. In the actual test, the answer choices appear next to 
-                        empty check boxes. Click on a box to select the choice next to it; this causes an “x” to appear in the box.
-                        If you change your mind, click the box again to remove the “x.”
-                    </p>
-                `,
-            question: `<p>Which of the following representations would best help the students describe the relationship between time of day and temperature?
-                         </p>`,
-            answers: ['<img class="$etH" src="/rsc/img/question_8_A.png" alt="">',
-                      '<img class="$etH" src="/rsc/img/question_8_B.png" alt="">',
-                      '<img class="$etH" src="/rsc/img/question_8_C.png" alt="">',
-                      '<img class="$etH" src="/rsc/img/question_8_D.png" alt="">'
-                    ],
-            correct: ['B'],
-            rationale: `<p> The correct answer is (B). This question tests your
-            ability to select a graphical representation of data that
-            will reveal a possible relationship between two specific
-            variables. For the activity described, the graph in choice
-            (B) is the best representation of the students’ data
-            because it reveals how temperature changed during
-            the day for each of five different days, which will allow
-            the students to identify the relationship between time
-            of day and temperature. In contrast, the other graphs
-            are not as useful for revealing the relationship between
-            time of day and temperature. The graph in choice (A)
-            shows the average temperature for each of five different
-            days but does not reveal how the temperature changed
-            during any of those days. Similarly, the graph in choice
-            (C) shows the morning temperature for each of five
-            different days but does not reveal how the temperature
-            changed during any of those days. The graph in choice
-            (D) shows how the temperature at a particular time of
-            day changed over five consecutive days, but the graph
-            is not the best representation for identifying a pattern in
-            how the temperature changed during each of those
-            days..</p>`
-        },
-        ]
-    },
-    
-    
+            id: "DONT RENDER",
+
+            a11y: ``,
+            question: ``,
+            answers: [''],
+            correct: [''],
+            rationale: ``
+        }]
+
+    }
 ]
+
+
+module.exports = {
+    questionObject
+}
