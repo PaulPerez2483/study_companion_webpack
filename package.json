@@ -21,7 +21,7 @@
   "homepage": "https://github.com/PaulPerez2483/study_companionV2#readme",
   "dependencies": {
     "webpack": "^4.41.3",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
     "@babel/core": "^7.7.5",
